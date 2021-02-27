@@ -1,0 +1,45 @@
+input {
+    padding: 10px 16px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #bbbbbb;
+    display: flex;
+    align-items: center;
+}
+
+    input::-webkit-input-placeholder {
+        font-size: 12px;
+        line-height: 3;
+        padding-left: 24px;
+    }
+
+.input-search {
+    background-image: url(../icons/search.png);
+    background-size: 16px contain;
+    background-repeat: no-repeat;
+    background-position: 16px center;
+    width: 250px;
+}
+
+select {
+    padding: 9px 16px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #bbbbbb;
+}
+
+.date-picker {
+    padding: 8px 16px;
+}
+
+input:focus, select:focus, .button:focus, .second-button:focus{
+    border: 1px solid green;
+}
+
+#txtFilterText{
+    padding: 10px 35px;
+}
+
+input.border-red{
+    border: 1px solid #ff4747;
+}

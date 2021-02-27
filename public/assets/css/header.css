@@ -1,0 +1,53 @@
+.header {
+    width: calc(100% - 221px);
+    height: 60px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: flex;
+}
+
+.obj-list {
+    float: left;
+}
+
+    .obj-list select {
+        border-color: #ffffff;
+        position: absolute;
+        top: 12px;
+        margin-left: 16px;
+    }
+
+.account {
+    float: right;
+    display: flex;
+    line-height: 60px;
+    position: absolute;
+    right: 0px;
+}
+
+.account-avatar {
+    width: 24px;
+    height: 24px;
+    background-image: url(../icons/avatar-default.png);
+    margin-right: 16px;
+    margin-top: 18px;
+}
+
+.account-name {
+    margin-right: 16px;
+}
+
+.account-options {
+    width: 16px;
+    height: 16px;
+    background-image: url(../icons/option.png);
+    margin-right: 16px;
+    margin-top: 22px;
+}
+
+    .account-options:hover {
+        cursor: pointer;
+    }

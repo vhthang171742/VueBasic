@@ -1,0 +1,46 @@
+.content {
+    width: calc(100% - 221px);
+    height: calc(100vh - 61px);
+    background-color: #ffffff;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+    /*page title*/
+    .content .header-content {
+        padding: 16px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+    }
+
+        .content .header-content .title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .content .header-content .page-feature {
+            position: absolute;
+            right: 16px;
+            display: flex;
+        }
+
+    /*filter bar*/
+    .content .filter-bar {
+        display: flex;
+        background-color: white;
+        padding: 16px;
+        height: 40px;
+        align-items: center;
+    }
+
+        .content .filter-bar .btn-refresh {
+            position: absolute;
+            right: 16px;
+        }
+
+    .content .filter-bar .filter-elem{
+        margin-right: 16px;
+        /* width: 20000px; */
+    }

@@ -1,0 +1,73 @@
+.button {
+    display: flex;
+    align-items: center;
+    background-color: #019160;
+    border-radius: 4px;
+    height: 40px;
+    font-size: 13px;
+    color: #ffffff;
+    font-family: GoogleSans-Regular;
+    padding-left: 16px;
+    padding-right: 16px;
+    outline: none;
+    border: none;
+    margin-left: 16px;
+}
+
+.btn-text {
+    margin-left: 8px;
+    text-align: center;
+}
+
+.btn-icon {
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+    .button:hover {
+        cursor: pointer;
+        background-color: #2FBE8E;
+    }
+
+    #btnAdd {
+        float: right;
+    }
+
+    .button .btn-icon-add {
+        background-image: url(../icons/add.png);     
+    }
+
+    #btnDelete{
+        float: right;
+    }
+
+    .button .btn-icon-delete {
+        background-image: url(../icons/delete.png);
+    }
+
+.second-button {
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 4px;
+    height: 40px;
+    color: #000000;
+    outline: 0px;
+    border: 1px solid #bbbbbb;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.second-btn-text {
+    text-align: center;
+}
+    .second-button:hover{
+        cursor: pointer;
+        background-color: #e9ebee;
+    }
+
+    .second-button .btn-icon-refresh {
+        background-image: url(../icons/refresh.png);
+        background-position: center;
+    }

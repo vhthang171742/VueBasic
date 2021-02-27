@@ -1,0 +1,5 @@
+{
+    "/students/:id": "/students?StudentId=:id",
+    "/classes/:id": "/classes?ClassId=:id",
+    "/positions/:id": "/positions?PositionId=:id"
+}

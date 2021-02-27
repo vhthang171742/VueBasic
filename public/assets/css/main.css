@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: GoogleSans-Regular;
+    font-size: 13px;
+}
+
+.loading {
+    display: none;
+}
+
+    .loading .loading-modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        opacity: .5;
+        background-color: #000000;
+        z-index: 101;
+    }
+
+    .loading .loading-icon {
+        position: fixed;
+        border: 16px solid #f3f3f3;
+        border-top: 16px solid #3498db;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        top: calc(50vh - 25px);
+        left: calc(50% - 25px);
+        animation: spin 2s linear infinite;
+        z-index: 102;
+    }
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,93 @@
+/*paging bar*/
+.paging-bar {
+    width: calc(100% - 221px);
+    height: 56px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    left: 221px;
+}
+
+.page-group {
+    width: 20%;
+    padding-left: 16px;
+    text-align: left;
+}
+
+.page-nav {
+    width: 60%;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-arrow {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    background-color: #ffffff;
+    line-height: 30px;
+    margin-left: 8px;
+    cursor: pointer;
+    background-size: contain;
+}
+
+    .nav-arrow:hover {
+        background-color: #E9EBEE;
+    }
+
+.page-nav .left-nav {
+    display: flex;
+    align-content: center;
+}
+
+    .page-nav .left-nav .nav-first {
+        background-image: url(../icons/btn-firstpage.svg);
+    }
+
+    .page-nav .left-nav .nav-prev {
+        background-image: url(../icons/btn-prev-page.svg);
+    }
+
+.page-nav .right-nav {
+    display: flex;
+    align-content: center;
+}
+
+    .page-nav .right-nav .nav-next {
+        background-image: url(../icons/btn-next-page.svg);
+    }
+
+    .page-nav .right-nav .nav-last {
+        background-image: url(../icons/btn-lastpage.svg);
+    }
+
+.page-nav .page-number {
+    display: flex;
+    align-items: center;
+}
+
+    .page-nav .page-number .table-number {
+        width: 30px;
+        height: 30px;
+        border: 1px solid #bbbbbb;
+        border-radius: 50%;
+        background-color: #E9EBEE;
+        text-align: center;
+        line-height: 30px;
+        margin-left: 8px;
+        cursor: pointer;
+    }
+
+        .page-nav .page-number .table-number:hover {
+            background-color: #ffffff;
+        }
+
+.rows-selector {
+    width: 20%;
+    padding-right: 16px;
+    text-align: right;
+}
