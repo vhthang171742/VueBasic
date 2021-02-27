@@ -3,9 +3,6 @@
     <div class="header-content">
       <div class="title">Danh sách học sinh</div>
       <div class="page-feature">
-        <BaseButton type="normal">
-          <div slot="text">Button 1</div>
-        </BaseButton>
         <button class="button" id="btnDelete" @click="deleteSelected">
           <div class="btn-icon btn-icon-delete"></div>
           <div class="btn-text">Xóa dòng chọn</div>
@@ -116,7 +113,6 @@ import StudentGrid from "./StudentGrid.vue";
 import axios from "axios";
 
 import { mapActions, mapGetters } from "vuex";
-import BaseButton from "../../components/BaseButton.vue";
 export default {
   data() {
     return {
@@ -327,7 +323,6 @@ export default {
   components: {
     StudentDialog,
     StudentGrid,
-    BaseButton,
   },
   mounted() {},
   beforeMount() {
