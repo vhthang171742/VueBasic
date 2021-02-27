@@ -50,9 +50,6 @@ export default {
     studentList: Array,
   },
   methods: {
-    // handler(e) {
-    //   console.log(e);
-    // },
     selectRow(student) {
       this.$emit("on-row-select", student);
     },

@@ -183,6 +183,7 @@ export default {
     },
     closeDialog() {
       this.isDialogOpen = false;
+      this.getStudentList();
     },
     submitDialog(newStudent) {
       if (this.dialogMode == 0) {
@@ -192,31 +193,27 @@ export default {
           })
           .then(function(response) {
             alert("Thêm thành công! " + response.statusText);
-            this.getStudentList();
           })
           .catch(function(error) {
             alert("Thêm thất bại! " + error);
           });
       }
       if (this.dialogMode == 1) {
-        console.log(this.student);
         axios
           .put(
-            `http://localhost:3000/students/${this.newStudent.StudentId}`,
-            JSON.stringify(newStudent),
+            `http://localhost:3000/students/${this.student.StudentId}`,
+            JSON.stringify(this.student),
             {
               headers: { "Content-Type": "application/json" },
             }
           )
           .then(function(response) {
             alert("Sửa thành công! " + response.statusText);
-            this.getStudentList();
           })
           .catch(function(error) {
             alert("Sửa thất bại! " + error);
           });
       }
-      this.getStudentList();
     },
     addSelectedRow(newSelected) {
       if (this.selectedStudent.indexOf(newSelected) === -1) {
@@ -241,11 +238,8 @@ export default {
       this.selectedStudent.forEach((student) => {
         axios
           .delete(`http://localhost:3000/students/${student.StudentId}`)
-          .then(function(response) {
-            this.selectedStudent.splice(0, 1);
-            console.log(response);
+          .then(function() {
             deleted++;
-            this.getStudentList();
           })
           .catch(function(error) {
             console.log(error);
@@ -258,6 +252,8 @@ export default {
           total +
           " đã chọn"
       );
+      this.selectedStudent.splice(0, this.selectedStudent.length);
+      this.getStudentList();
     },
 
     ...mapActions({
